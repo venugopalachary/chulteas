@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Chuletas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.html">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ilmosys-icon.css">
+    <link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+
+
+    <!-- THEME / PLUGIN CSS -->
+    <link rel="stylesheet" href="js/vendors/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+
+   <style>
+
+    ul{
+        float: left;
+    }
+
+    li{
+        text-align: left;
+        margin: 10px;
+    }
+  .slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transition: all 0.5s ease-in-out; */
+  }
+
+  .slider img:first-child {
+    z-index: 1;
+  }
+
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+</style>
+
+    
+
+</head>
+
+<body id="home" style="background: #FCF0C8;">
+    <div class="body">
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar-inverse navbar-lg navbar-fixed-top" style="background:#FCF0C8;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand brand"><img src="logo.png" alt="logo" width="120" height="60" ></a>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown mm-menu">
+                                <a  class="page-scroll" href="#home" >Home</a>
+                            </li>
+
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#about">About</a>
+                            </li>
+							
+							<li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#explore">Menu</a>
+                            </li>
+
+                            <li class="dropdown mm-menu">
+                                <a class="page-scroll" href="#reviews">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Home -->
+        <div class="container-fluid" style="padding-left:0px;padding-right:0px;">
+
+              <div class="slider" style="margin-top:90px;">
+                <img
+                  id="img-1"
+                  src="https://images.bannerbear.com/direct/EjJywNMlJm5zmerB8a/requests/000/033/000/213/0Mn5r3E1XY0gmWDZQWPoD9kg7/9e42168a169264bb575a5ec10acd1c8942967845.jpg"
+                  alt="Image 1"
+                />
+                <img
+                  id="img-2"
+                  src="https://images.bannerbear.com/direct/EjJywNMlJm5zmerB8a/requests/000/033/000/213/0Mn5r3E1XY0gmWDZQWPoD9kg7/9e42168a169264bb575a5ec10acd1c8942967845.jpg"
+                  alt="Image 2"
+                />
+                <img
+                  id="img-3"
+                  src="https://images.bannerbear.com/direct/EjJywNMlJm5zmerB8a/requests/000/033/000/213/0Mn5r3E1XY0gmWDZQWPoD9kg7/9e42168a169264bb575a5ec10acd1c8942967845.jpg"
+                  alt="Image 3"
+                />
+              </div>
+              <div class="navigation-button">
+                <span class="dot active" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+                <span class="dot" onclick="changeSlide(2)"></span>
+              </div>
+            
+             
+        </div>
+
+        <!-- About Us -->
+        <div id="about" class="container">
+            <!-- About Section 1 -->
+            <div class="intro intro-about2">
+                <div class="container">
+                    <div class="row center-content">
+                       
+                        <div class="col-md-12">
+                            <h3 style="text-align: center;">Chuletas</h3>
+
+                            <p>At Chuletas, we blend tradition with taste, creating appetizers that redefine homemade goodness. Our commitment to quality ensures every bite is a celebration of flavours. We create each flavour in our kitchen with hand-blended spices and real ingredients you can see. Our passion is making simple food that tastes amazing. Try our cutlets and cheese balls. We think you’ll agree that they are the best appetizers ever!
+                             </p>
+
+
+                               <p>Everything we do centres around high-quality ingredients and delicious food. This doesn’t stop at the food we make, we want to spread out the love for great food, made from the heart. For three decades, a cherished family recipe has brought delight to our home. Now, Chuletas is proud to bring this age-old secret to your table. Our frozen appetizers, made with the same love and passion that inspired the original recipe, promise an authentic taste of tradition in every bite. Handmade with fresh ingredients, our offerings are a testament to the warmth of homemade goodness. With zero preservatives and a shelf life of 45 days, indulge in the essence of our heritage, now served for you to savour.
+                             </p>
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section 2 -->
+            <div class="intro intro-about2">
+                <div class="container">
+                    <div class="row center-content">
+
+                        <div class="col-md-6">
+                            <h3>Vision</h3>
+                            <p>"To Preserve Tradition, One Bite at a Time. We envision a world where the authentic flavours of homemade snacks, passed down through generations, are savoured and appreciated globally. Our commitment lies in crafting frozen treats that echo the essence of home, connecting people through the shared love for genuine, traditional, and delicious experiences."</p>
+							
+							
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <h3>Mission</h3>
+                            <p>"At Chuletas, our mission is to bring the heart-warming taste of authentic, homemade snacks to every household. We dedicate ourselves to meticulously curating recipes treasured across generations, using only the finest and freshest ingredients. Through innovation, quality, and a deep respect for culinary heritage, we strive to provide frozen treats that evoke the warmth of home-cooked meals. We are dedicated to delighting our customers, fostering community, and preserving the rich tapestry of flavours that define our cultural heritage."</p>
+                            
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space80"></div>
+
+
+        <div id="explore" class="elements-content">
+            <div class="container">
+                <div class="about-inline text-center">
+                    <h3>Our Dishes </h3>
+                  
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/01.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Veg Croquettes</h4>
+                                <p class="desc"> Delicious bites with a tantalising fusion of bread, </p>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/02.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Veg Cutlets</h4>
+                                <p class="desc">Delicious bites with a tantalising fusion of bread </p>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/03.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Chicken Croquettes</h4>
+                                <p class="desc"> Delicious bites with a tantalising fusion of bread, </p>
+                               
+                            </div>
+                          
+                        </div>
+                    </div>
+
+
+
+                   <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/01.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Chicken Cutlets</h4>
+                                <p class="desc"> Delicious bites with a tantalising fusion of bread, </p>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/02.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Chicken Popsicles</h4>
+                                <p class="desc">Delicious bites with a tantalising fusion of bread </p>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-product">
+                            <div class="img-wrap"><img src="images/foods/03.jpg" alt="img"></div>
+                            <div class="info-wrap">
+                                <h4 class="title">Fish Cutlets</h4>
+                                <p class="desc"> Delicious bites with a tantalising fusion of bread, </p>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                 
+                 <div class="col-md-5"></div>
+                 <div class="col-md-2">
+                    <div class="bottom-wrap">
+                      <a href="#" class="btn btn-sm btn-primary float-right"  data-toggle="modal" data-target="#modalContactForm">Order Now</a>
+                    </div>
+                 </div>
+                 <div class="col-md-5"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="space100"></div>
+
+        <!-- Testimonials -->
+        <div id="reviews" style="background: #F3F4F4;" >
+            <div class="container">
+                <div class="about-inline text-center">
+                    <h3 style="color:black;">Our Happy Customers </h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="quote2">
+                            <div>
+                                <img src="images/testimonials/1.jpg" alt="" />
+                                <p>"I’ve tried most of the items and I must say they’re all awesome. My kids and everyone at home loved the cutlets, popsicles in particular. Chuletas brings with it the luxury of having pure home made food with uncompromising hygiene which is very rare to find in today’s market. Great job ! And keep going.. wishing you all the best !"</p>
+                                <span class="author">Shambavi</span>
+                            </div>
+                            <div>
+                                <img src="images/testimonials/2.jpg" alt="" />
+                                <p>Yummy and nutritious cutlets - the secret spice and flavour in the cutlets make them irresistible!! Veg cutlets are a great source of vegetables that kids don't otherwise eat. Thankful to you for making healthy eating fun for our family.</p>
+                                <span class="author">John</span>
+                            </div>
+                            <div>
+                                <img src="images/testimonials/1.jpg" alt="" />
+                                <p>As a dedicated customer of Chuletas for over four years, I can confidently say that their products, like chicken cutlets and cheese balls, have become our household staples, especially cherished by our kids. The superior quality of Chuletas' snacks is incomparable to industrially manufactured alternatives, making them a standout choice for our family. Beyond daily snacking, Chuletas has become a delightful talking point at our parties, where guests consistently rave about the exceptional taste and quality. Cheers to Chuletas for adding a dash of excellence to both our daily routines and special occasions! "</p>
+                                <span class="author">Mary</span>
+                            </div>
+                             <div>
+                                <img src="images/testimonials/1.jpg" alt="" />
+                                <p>The word ‘Chuleta’ is spanish for cutlet and is perfect to describe the tasty range of snacks from this home kitchen. A lot of care and passion goes into the preparation of these snacks and it shows in the delight with which they are devoured by our kids. Guests too enjoy the snacks, and have marvelled at the taste. They come out really well in the air fryers, so that’s a huge plus if you are the health conscious type. The packaging is robust and does well to preserve the integrity of the snacks within. Overall, highly recommended if you are looking for ready-to-fry snacks made with high quality ingredients and zero preservatives."</p>
+                                <span class="author">Mary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space100"></div>
+            </div>
+        </div>
+
+
+
+        <!-- PARALLAX -->
+        <section class="text-center">
+            <div class="cta-wrap subscribe-elt2 ">
+                <div class="container">
+
+                    <div class="col-md-3">
+
+                         <ul>
+                          <li><img src="logo.png" alt="logo" width="150" height="100" ></li>
+                          <li><p style="text-align:left;">At Chuletas, we blend tradition with taste, creating appetizers that redefine homemade goodness.</p></li>
+                          
+                        </ul>
+                        
+
+                    </div>
+               
+                    <div class="col-md-3">
+                      
+                      
+                       <ul>
+                          <li><h4>Navigation</h4></li>
+                          <li>Menu</li>
+                          <li>About us</li>
+                          <li>Contact us</li>
+                          <li>Main dishes</li>
+                        </ul>
+
+
+                    </div>
+               
+
+
+                
+                    <div class="col-md-3">
+                        
+
+                        <ul>
+                          <li><h4>Contact</h4></li>
+                          <li>8977910088</li>
+                          <li>support@chuletas.in</li>
+                          <li>Plot no 33, Dwarakamayi,</li>
+                          <li>Hindi Nagar, Panjagutta, Hyd-500082.</li>
+                        </ul>
+
+                    </div>
+
+              
+                    <div class="col-md-3">
+
+                        <ul>
+                          <li><h4>Follow Us</h4></li>
+                         
+                           <div style="float:left;margin:10px;">
+                           
+                        <i class="fa fa-facebook-f" style="font-size:36px;margin-top: 10px;"></i>
+                        <i class="fa fa-instagram" style="font-size:36px;margin-top: 10px;margin-left: 20px;"></i> 
+
+                        </div>
+                        
+                        </ul>
+
+                        
+                        
+                         
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <hr>
+        <!-- Copyright -->
+        <div class="footer-copy">
+            <div class="container">
+
+                <div class="col-md-3">
+                    &copy; 2023 Chuletas. All rights reserved.
+                </div>
+
+                <div class="col-md-5">
+                    
+                </div>
+
+
+                <div class="col-md-2">
+                    Terms of Service
+                </div>
+
+                <div class="col-md-2">
+                    Privacy Policy
+                </div>
+                
+            </div>
+        </div>
+		
+		
+		
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" data-toggle="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+	  
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+	  <div class="cf2-wrap">
+	   
+                        <h2>Make Your Order Now!</h2>
+
+                        <div class="clearfix space40"></div>
+                        <form class="positioned" name="sentMessage" id="contactForm" action="http://demo.tutsflow.com/foodera/php/contact.php" method="post">
+                            <div class="row">
+							
+                                <div class="col-md-6 col-sm-6">
+                                    <input name="senderName" id="senderName" placeholder="Your Name" required type="text">
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input name="senderEmail" id="senderEmail" placeholder="Email Address" required type="email">
+                                </div>
+                            </div>
+							
+                            <input name="address" id="address" placeholder="Address" required type="text">
+
+							<input placeholder="Zip Code" required type="number">
+							
+							<input placeholder="Mobile No." required type="number">
+							
+							
+						<select name="name" id="select" required="required">
+                        <option value=""> Rainbow Vegetable Sandwich - $10.50 </option>
+                        <option value="1"> Vegetarian Burger - $9.20 </option>
+                        <option value="2"> Raspberry Stuffed French Toast - $12.50 </option>
+                        
+                      </select>
+							
+
+                           
+                            <button type="submit" class="btn btn-primary btn-ico">Send Message<i class="fa fa-paper-plane-o"></i></button>
+                        </form>
+                        <div id="sendingMessage" class="statusMessage">
+                            <p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
+                        </div>
+                        <div id="successMessage" class="successmessage">
+                            <p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
+                        </div>
+                        <div id="failureMessage" class="errormessage">
+                            <p><span class="error-ico"></span> There was a problem sending your message. Please try again.</p>
+                        </div>
+                        <div id="incompleteMessage" class="statusMessage">
+                            <p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
+                        </div>
+                    </div>
+                </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- JAVASCRIPT =============================-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/vendors/slick/slick.min.js"></script>
+        <script src="js/vendors/jquery.easing.min.js"></script>
+        <script src="js/vendors/stellar.js"></script>
+        <script src="js/vendors/isotope/isotope.pkgd.js"></script>
+        <script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+        <script src="js/vendors/mc/main.js"></script>
+
+
+
+        
+<script>
+var currentImg = 0;
+var imgs = document.querySelectorAll(".slider img");
+let dots = document.querySelectorAll(".dot");
+var interval = 3000;
+
+// Second banner
+var secondEventTitle = "Hi! *Freshmen* Orientation Day";
+
+// Third banner
+var thirdEventDate = new Date("2023-02-01"); // pull this from database
+var thirdEventDateString = thirdEventDate.toLocaleDateString("en-us", {
+  year: "numeric",
+  month: "short",
+  day: "numeric"
+});
+var days = calculateDays(new Date(), thirdEventDate) || 0;
+const countdownText = days > 0 ? `${days} days left` : "Live Now!";
+
+var secondImageUrl = `https://ondemand.bannerbear.com/simpleurl/01YWAxB7nGYdJrKoXM/title/text/${encodeURIComponent(
+  secondEventTitle
+)}`;
+var thirdImageUrl = `https://ondemand.bannerbear.com/simpleurl/ley9O0B2ZGbB4GjRDY/date/text/${encodeURIComponent(
+  thirdEventDateString
+)}/countdown/text/${encodeURIComponent(countdownText)}`;
+
+document.getElementById("img-2").src = secondImageUrl;
+document.getElementById("img-3").src = thirdImageUrl;
+
+var timer = setInterval(changeSlide, interval);
+
+function changeSlide(n) {
+  for (var i = 0; i < imgs.length; i++) {
+    imgs[i].style.opacity = 0;
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  currentImg = (currentImg + 1) % imgs.length;
+
+  if (n != undefined) {
+    clearInterval(timer);
+    timer = setInterval(changeSlide, interval);
+    currentImg = n;
+  }
+
+  imgs[currentImg].style.opacity = 1;
+  dots[currentImg].className += " active";
+}
+
+function calculateDays(today, eventDate) {
+  const difference = eventDate.getTime() - today.getTime();
+
+  return Math.ceil(difference / (1000 * 3600 * 24)); // convert to days
+}
+
+</script>
+</body>
+
+</html>
