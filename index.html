@@ -38,14 +38,30 @@
 
 
     .imgk {
-   width: 600px; // current width
-   height: 500px; // current height
+      width: 600px; // current width
+      height: 500px; // current height
+    }
+
+    @media (max-width:400px){
+     .imgk {
+       width: 300px; // new width for screen <768px
+       height: 300px; // new height for screen <768px
+     }
+    }
+
+
+
+
+    .crosssymbol {
+   
+   display: none;
 }
 
 @media (max-width:400px){
- .imgk {
-   width: 300px; // new width for screen <768px
-   height: 300px; // new height for screen <768px
+ .crosssymbol {
+   float:right;
+   margin-top: 4px;
+   display: block;
  }
 }
   
@@ -76,7 +92,7 @@
                         </button>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <button onclick="myFunction()" style="float:right;margin-top: 4px;"><i class="fa fa-times" aria-hidden="true" ></i></button>
+                        <button onclick="myFunction()" style="" class="crosssymbol"><i class="fa fa-times" aria-hidden="true" ></i></button>
                        
                        
 
@@ -172,7 +188,7 @@
                 </div>
             </div>
         </div>
-        <div class="space80"></div>
+        
 
 
         <div id="explore" class="elements-content">
@@ -244,7 +260,7 @@
 
                     <div class="col-md-4">
                         <div class="card card-product">
-                            <div class="img-wrap"><img src="images/products/ChickenPopsicles.jpg" alt="img"></div>
+                            <div class="img-wrap"><img src="images/products/p1.jpg" alt="img"></div>
                             <div class="info-wrap">
                                 <h4 class="title">Chicken Popsicles</h4>
                                 <p class="desc">Mildly seasoned chicken skewers, perfect for a flavorful meal or snack.</p>
@@ -279,7 +295,7 @@
                 </div>
             </div>
         </div>
-        <div class="space80"></div>
+        <div class="space30"></div>
 
         <!-- Testimonials -->
         <div id="reviews" style="background: #F3F4F4;" >
@@ -292,22 +308,22 @@
                         <div class="quote2">
                             <div>
                                 
-                                <p>I’ve tried most of the items and I must say they’re all awesome. My kids and everyone at home loved the cutlets, popsicles in particular. Chuletas brings with it the luxury of having pure home made food with uncompromising hygiene which is very rare to find in today’s market. Great job ! And keep going.. wishing you all the best !</p>
+                                <p style="text-align:justify;">I’ve tried most of the items and I must say they’re all awesome. My kids and everyone at home loved the cutlets, popsicles in particular. Chuletas brings with it the luxury of having pure home made food with uncompromising hygiene which is very rare to find in today’s market. Great job ! And keep going.. wishing you all the best !</p>
                                 <span class="author"><b>Navya Lakshmi Pothuri</b></span>
                             </div>
                             <div>
                                 
-                                <p>Yummy and nutritious cutlets - the secret spice and flavour in the cutlets make them irresistible!! Veg cutlets are a great source of vegetables that kids don't otherwise eat. Thankful to you for making healthy eating fun for our family.</p>
+                                <p style="text-align:justify;">Yummy and nutritious cutlets - the secret spice and flavour in the cutlets make them irresistible!! Veg cutlets are a great source of vegetables that kids don't otherwise eat. Thankful to you for making healthy eating fun for our family.</p>
                                 <span class="author"><b>Raj Upreti</b></span>
                             </div>
                             <div>
                                
-                                <p>As a dedicated customer of Chuletas for over four years, I can confidently say that their products, like chicken cutlets and cheese balls, have become our household staples, especially cherished by our kids. The superior quality of Chuletas' snacks is incomparable to industrially manufactured alternatives, making them a standout choice for our family. Beyond daily snacking, Chuletas has become a delightful talking point at our parties, where guests consistently rave about the exceptional taste and quality. Cheers to Chuletas for adding a dash of excellence to both our daily routines and special occasions! </p>
+                                <p style="text-align:justify;" >As a dedicated customer of Chuletas for over four years, I can confidently say that their products, like chicken cutlets and cheese balls, have become our household staples, especially cherished by our kids. The superior quality of Chuletas' snacks is incomparable to industrially manufactured alternatives, making them a standout choice for our family. Beyond daily snacking, Chuletas has become a delightful talking point at our parties, where guests consistently rave about the exceptional taste and quality. Cheers to Chuletas for adding a dash of excellence to both our daily routines and special occasions! </p>
                                 <span class="author"><b>Anitha Reddy</b></span>
                             </div>
                              <div>
                                
-                                <p>The word ‘Chuleta’ is spanish for cutlet and is perfect to describe the tasty range of snacks from this home kitchen. A lot of care and passion goes into the preparation of these snacks and it shows in the delight with which they are devoured by our kids. Guests too enjoy the snacks, and have marvelled at the taste. They come out really well in the air fryers, so that’s a huge plus if you are the health conscious type. The packaging is robust and does well to preserve the integrity of the snacks within. Overall, highly recommended if you are looking for ready-to-fry snacks made with high quality ingredients and zero preservatives.</p>
+                                <p style="text-align:justify;" >The word ‘Chuleta’ is spanish for cutlet and is perfect to describe the tasty range of snacks from this home kitchen. A lot of care and passion goes into the preparation of these snacks and it shows in the delight with which they are devoured by our kids. Guests too enjoy the snacks, and have marvelled at the taste. They come out really well in the air fryers, so that’s a huge plus if you are the health conscious type. The packaging is robust and does well to preserve the integrity of the snacks within. Overall, highly recommended if you are looking for ready-to-fry snacks made with high quality ingredients and zero preservatives.</p>
                                 <span class="author"><b>Arun Jayaprakash</b></span>
                             </div>
                         </div>
@@ -343,7 +359,7 @@
                           <li><a class="page-scroll" href="#about" style="color:black;" >About</a></li>
                           <li><a class="page-scroll" href="#explore" style="color:black;">Menu</a>
                             </li>
-                          <li><a class="page-scroll" href="#reviews" style="color:black;" >Contact</a></li>
+                          <li><a class="page-scroll" href="#contact" style="color:black;" >Contact</a></li>
                         </ul>
 
 
@@ -414,10 +430,6 @@
         </div>
         
         
-        
-
-
-
 
         <!-- JAVASCRIPT =============================-->
         <script src="js/jquery.js"></script>
