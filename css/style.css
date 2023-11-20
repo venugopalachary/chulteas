@@ -197,6 +197,7 @@ ul, ol, li {
 	border-width: 0;
 	border-radius: 0;
 	background: transparent;
+	line-height: 3;
 }
 
 .navbar-inverse {
