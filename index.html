@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
+    <meta name="format-detection" content="telephone=yes">
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.html">
@@ -22,7 +23,10 @@
 
 
     <!-- THEME / PLUGIN CSS -->
-    <link rel="stylesheet" href="js/vendors/slick/slick.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 
    <style>
@@ -49,9 +53,6 @@
      }
     }
 
-
-
-
     .crosssymbol {
    
    display: none;
@@ -60,28 +61,67 @@
 @media (max-width:600px){
  .crosssymbol {
    float:right;
-   margin-top: 4px;
+   margin-top: 10px;
    display: block;
  }
 }
+
+.vision
+{
+    margin-top: -60px;
+}
+
+
+@media (max-width:600px){
+ .crosssymbol {
+   margin-top: 20px;
+ }
+
+ .slick-prev
+{
+    left: -14px;
+}
+ 
+.slick-next
+{
+    right: -15px;
+}
+ 
+
+
+}
+
+
   
 </style>
 
+  <style>
+        .slick-prev:before, .slick-next:before {
+            color: #ffce0b;
+            padding-left: -5px;
+        }
+    </style>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lobster+Two&family=Raleway:wght@700&display=swap" rel="stylesheet">
     
 
 </head>
 
-<body id="home" style="background: #FCF0C8;">
-    <div class="body">
+<body id="home" >
+    <div class="body" >
+
+
+        <div class="container">
         <!-- HEADER -->
         <header>
-            <nav class="navbar-inverse navbar-lg navbar-fixed-top" style="background:#FCF0C8;">
+            <nav class="navbar-lg navbar-fixed-top" style="background:rgb(252 240 200);">
                 <div class="container">
                     <div class="navbar-header">
                         <a href="#" class="navbar-brand brand"><img src="logo.png" alt="logo" width="180" height="130" ></a>
                         <br><br><br>
-                        <span>Perfect for snacking ,sharing and entertaining</span>
+                        <span style="margin-left: 12px;">Perfect for snacking ,sharing and entertaining</span>
                     </div>
 
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -92,25 +132,26 @@
                         </button>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                         <button onclick="myFunction()" style="" class="crosssymbol"><i class="fa fa-times" aria-hidden="true" ></i></button>
                        
                        
 
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown mm-menu">
-                                <a  class="page-scroll" href="#home" style="color:white;">Home</a>
+                                <a  class="page-scroll" href="#home" >Home</a>
                             </li>
 
                             <li class="dropdown mm-menu">
-                                <a class="page-scroll" href="#about" style="color:white;" >About</a>
+                                <a class="page-scroll" href="#about"  >About</a>
                             </li>
                             
                             <li class="dropdown mm-menu">
-                                <a class="page-scroll" href="#explore" style="color:white;">Menu</a>
+                                <a class="page-scroll" href="#explore" >Menu</a>
                             </li>
 
                             <li class="dropdown mm-menu">
-                                <a class="page-scroll" href="#contact" style="color:white;" >Contact</a>
+                                <a class="page-scroll" href="#contact"  >Contact</a>
                             </li>
 
                         </ul>
@@ -118,7 +159,7 @@
                 </div>
             </nav>
         </header>
-
+          </div>
 
 
 
@@ -126,7 +167,9 @@
             <div class="container">
                 <div class="row center-content">
                     <div class="col-md-5 col-sm-6">
-                        <h4>Enjoy the ease and joy of our frozen appetizers. They're expertly made and ready to fry, making every bite a delightful upgrade to your dining experience</h4>
+                        <h4 style="font-family: 'Cinzel', serif;
+                font-family: 'Lobster Two', sans-serif;
+                font-family: 'Raleway', sans-serif;">Enjoy the ease and joy of our frozen appetizers. They're expertly made and ready to fry, making every bite a delightful upgrade to your dining experience</h4>
                         <br>
                        
                         <div class="space30"></div>
@@ -147,7 +190,7 @@
             <!-- About Section 1 -->
             <div class="intro intro-about2">
                 <div class="container">
-                    <div class="row center-content">
+                    <div class="row center-content" style="margin-top: 65px;">
                        
                         <div class="col-md-12">
                             <h3 style="text-align: center;">Chuletas</h3>
@@ -170,7 +213,7 @@
                     <div class="row center-content">
 
                         <div class="col-md-6">
-                            <h3>Vision</h3>
+                            <h3 class="vision">Vision</h3>
                             <p>"To Preserve Tradition, One Bite at a Time. We envision a world where the authentic flavours of homemade snacks, passed down through generations, are savoured and appreciated globally. Our commitment lies in crafting frozen treats that echo the essence of home, connecting people through the shared love for genuine, traditional, and delicious experiences."</p>
                             
                             
@@ -192,7 +235,7 @@
 
 
         <div id="explore" class="elements-content">
-            <div class="container">
+            <div class="container" style="margin-top: 45px;">
                 <div class="about-inline text-center">
                     <h3>Our Dishes </h3>
                   
@@ -202,6 +245,7 @@
                         <div class="card card-product">
                             <div class="img-wrap"><img src="images/products/VegCroquettes.JPG" alt="img"></div>
                             <div class="info-wrap">
+                                <h4 class="title" style="margin-top:5px;margin-bottom:5px;" >Rs 450/Box</h4> 
                                 <h4 class="title" >Veg Croquettes</h4>
                                 <p class="desc"  > Delicious bites with a tantalising fusion
                                      of bread, spices and stretchy cheese </p>  
@@ -214,6 +258,7 @@
                         <div class="card card-product">
                             <div class="img-wrap"><img src="images/products/VegCutlets.jpg" alt="img"></div>
                             <div class="info-wrap">
+                                <h4 class="title" style="margin-top:5px;margin-bottom:5px;" >Rs 450/Box</h4> 
                                 <h4 class="title">Veg Cutlets</h4>
                                 <p class="desc">Fresh vegetable goodness encased in a crunchy
                                  exterior, a delightful vegetarian option </p>
@@ -227,6 +272,7 @@
                         <div class="card card-product">
                             <div class="img-wrap"><img src="images/products/ChickenCroquettes.jpg" alt="img"></div>
                             <div class="info-wrap">
+                                <h4 class="title" style="margin-top:5px;margin-bottom:5px;" >Rs 550/Box</h4> 
                                 <h4 class="title">Chicken Croquettes</h4>
                                 <p class="desc"> Cheesy melt in the mouth chicken delight, a true indulgence for your
                                     taste buds. </p>
@@ -250,6 +296,7 @@
                         <div class="card card-product">
                             <div class="img-wrap"><img src="images/products/ChickenCutlets.jpg" alt="img"></div>
                             <div class="info-wrap">
+                                <h4 class="title" style="margin-top:5px;margin-bottom:5px;" >Rs 550/Box</h4>
                                 <h4 class="title">Chicken Cutlets</h4>
                                 <p class="desc"> Deliciously seasoned chicken patties that are crispy outside
                                    and tender inside. </p>  
@@ -262,6 +309,7 @@
                         <div class="card card-product">
                             <div class="img-wrap"><img src="images/products/p1.jpg" alt="img"></div>
                             <div class="info-wrap">
+                                <h4 class="title" style="margin-top:5px;margin-bottom:5px;" >Rs 550/Box</h4>
                                 <h4 class="title">Chicken Popsicles</h4>
                                 <p class="desc">Mildly seasoned chicken skewers, perfect for a flavorful meal or snack.</p>
                                 
@@ -274,6 +322,7 @@
                         <div class="card card-product">
                             <div class="img-wrap"><img src="images/products/FishCutlets.jpg" alt="img"></div>
                             <div class="info-wrap">
+                                <h4 class="title" style="margin-top:5px;margin-bottom:5px;" >Rs 550/Box</h4>
                                 <h4 class="title">Fish Cutlets</h4>
                                 <p class="desc"> Savour the rich taste of fish in every bite, perfectly blended
                                   with spices. </p>
@@ -305,26 +354,26 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <div class="quote2">
+                        <div class="slider responsive2">
                             <div>
                                 
                                 <p style="text-align:justify;">I’ve tried most of the items and I must say they’re all awesome. My kids and everyone at home loved the cutlets, popsicles in particular. Chuletas brings with it the luxury of having pure home made food with uncompromising hygiene which is very rare to find in today’s market. Great job ! And keep going.. wishing you all the best !</p>
-                                <span class="author"><b>Navya Lakshmi Pothuri</b></span>
+                                <span class="author"><b> - Navya Lakshmi Pothuri</b></span>
                             </div>
                             <div>
                                 
                                 <p style="text-align:justify;">Yummy and nutritious cutlets - the secret spice and flavour in the cutlets make them irresistible!! Veg cutlets are a great source of vegetables that kids don't otherwise eat. Thankful to you for making healthy eating fun for our family.</p>
-                                <span class="author"><b>Raj Upreti</b></span>
+                                <span class="author"><b>- Raj Upreti</b></span>
                             </div>
                             <div>
                                
                                 <p style="text-align:justify;" >As a dedicated customer of Chuletas for over four years, I can confidently say that their products, like chicken cutlets and cheese balls, have become our household staples, especially cherished by our kids. The superior quality of Chuletas' snacks is incomparable to industrially manufactured alternatives, making them a standout choice for our family. Beyond daily snacking, Chuletas has become a delightful talking point at our parties, where guests consistently rave about the exceptional taste and quality. Cheers to Chuletas for adding a dash of excellence to both our daily routines and special occasions! </p>
-                                <span class="author"><b>Anitha Reddy</b></span>
+                                <span class="author"><b> - Anitha Reddy</b></span>
                             </div>
                              <div>
                                
                                 <p style="text-align:justify;" >The word ‘Chuleta’ is spanish for cutlet and is perfect to describe the tasty range of snacks from this home kitchen. A lot of care and passion goes into the preparation of these snacks and it shows in the delight with which they are devoured by our kids. Guests too enjoy the snacks, and have marvelled at the taste. They come out really well in the air fryers, so that’s a huge plus if you are the health conscious type. The packaging is robust and does well to preserve the integrity of the snacks within. Overall, highly recommended if you are looking for ready-to-fry snacks made with high quality ingredients and zero preservatives.</p>
-                                <span class="author"><b>Arun Jayaprakash</b></span>
+                                <span class="author"><b> - Arun Jayaprakash</b></span>
                             </div>
                         </div>
                     </div>
@@ -335,15 +384,15 @@
 
 
 
-        <!-- PARALLAX -->
+        <!-- Footer -->
         <section class="text-center" id="contact">
             <div class="cta-wrap subscribe-elt2 ">
-                <div class="container">
+                <div class="container" >
 
                     <div class="col-md-3">
 
                          <ul>
-                          <li><img src="logo.png" alt="logo" width="150" height="100" ></li>
+                          <li><img src="logo.png" alt="logo" width="150" height="100" style="margin-top:-10px;" ></li>
                           <li><p style="text-align:left;">At Chuletas, we blend tradition with taste, creating appetizers that redefine homemade goodness.</p></li>
                           
                         </ul>
@@ -373,8 +422,8 @@
 
                         <ul>
                           <li><h4>Contact</h4></li>
-                          <li>8977910088</li>
-                          <li>support@chuletas.in</li>
+                          <li><a href="tel:8977910088"  class="call" >8977910088</a></li>
+                          <li><a href="mailto:support@chuletas.in">support@chuletas.in</a></li>
                           <li>Plot no 33, Dwarakamayi,</li>
                           <li>Hindi Nagar, Panjagutta, Hyd-500082.</li>
                         </ul>
@@ -389,8 +438,8 @@
                          
                            <div style="float:left;margin:10px;">
                            
-                        <i class="fa fa-facebook-f" style="font-size:36px;margin-top: 10px;"></i>
-                        <i class="fa fa-instagram" style="font-size:36px;margin-top: 10px;margin-left: 20px;"></i> 
+                        <a href="https://facebook.com/chuletashyd"><i class="fa fa-facebook-f" style="font-size:36px;margin-top: 10px;"></i></a>
+                        <a href="https://www.instagram.com/chuletashyd"><i class="fa fa-instagram" style="font-size:36px;margin-top: 10px;margin-left: 20px;"></i> </a>
 
                         </div>
                         
@@ -429,7 +478,7 @@
             </div>
         </div>
         
-        
+        </div>
 
         <!-- JAVASCRIPT =============================-->
         <script src="js/jquery.js"></script>
@@ -466,6 +515,52 @@ function myFunction() {
     $('.navbar-collapse').collapse('hide');
  
 }
+</script>
+
+
+
+<script type="text/javascript">
+    
+    $('.responsive2').slick({
+  dots: true,
+  infinite: true,
+  speed: 50,
+  arrows: true,
+  autoplay: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
 </script>
 
 

@@ -51,6 +51,7 @@ $(document).ready(function() {
             }, {
                 breakpoint: 600,
                 settings: {
+                    arrows: true,
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
@@ -96,9 +97,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var value = $(this).scrollTop();
         if (value > 80)
-            $(".navbar-lg .navbar-nav > li > a").css("color", "#a82d49" );
+            $(".navbar-lg .navbar-nav > li > a").css("color", "#fff" );
         else
-            $(".navbar-lg .navbar-nav > li > a").css("color", "#a82d49");
+            $(".navbar-lg .navbar-nav > li > a").css("color", "#fff");
     });
 	
 	// Fixed Header
